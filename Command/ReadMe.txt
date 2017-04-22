@@ -1,40 +1,18 @@
-========================================================================
-    CONSOLE APPLICATION : Command Project Overview
-========================================================================
+﻿Паттерн "Команда" (Command) 
+позволяет инкапсулировать запрос на выполнение определенного действия в виде отдельного объекта. 
+Этот объект запроса на действие и называется командой. При этом объекты, инициирующие запросы на 
+выполнение действия, отделяются от объектов, которые выполняют это действие.
 
-AppWizard has created this Command application for you.
+Команды могут использовать параметры, которые передают ассоциированную с командой информацию. 
+Кроме того, команды могут ставиться в очередь и также могут быть отменены.
 
-This file contains a summary of what you will find in each of the files that
-make up your Command application.
+Когда использовать команды?
+	 - Когда надо передавать в качестве параметров определенные действия, вызываемые в ответ на другие действия. 
+	 То есть когда необходимы функции обратного действия в ответ на определенные действия.
+	 - Когда необходимо обеспечить выполнение очереди запросов, а также их возможную отмену.
+	 - Когда надо поддерживать логгирование изменений в результате запросов. Использование логов может 
+	 помочь восстановить состояние системы - для этого необходимо будет использовать последовательность 
+	 запротоколированных команд.
 
-
-Command.vcxproj
-    This is the main project file for VC++ projects generated using an Application Wizard.
-    It contains information about the version of Visual C++ that generated the file, and
-    information about the platforms, configurations, and project features selected with the
-    Application Wizard.
-
-Command.vcxproj.filters
-    This is the filters file for VC++ projects generated using an Application Wizard. 
-    It contains information about the association between the files in your project 
-    and the filters. This association is used in the IDE to show grouping of files with
-    similar extensions under a specific node (for e.g. ".cpp" files are associated with the
-    "Source Files" filter).
-
-Command.cpp
-    This is the main application source file.
-
-/////////////////////////////////////////////////////////////////////////////
-Other standard files:
-
-StdAfx.h, StdAfx.cpp
-    These files are used to build a precompiled header (PCH) file
-    named Command.pch and a precompiled types file named StdAfx.obj.
-
-/////////////////////////////////////////////////////////////////////////////
-Other notes:
-
-AppWizard uses "TODO:" comments to indicate parts of the source code you
-should add to or customize.
-
-/////////////////////////////////////////////////////////////////////////////
+Задача на самостоятельную работу
+Расширить существующий код, добавив возможность включать мигание лампочки.

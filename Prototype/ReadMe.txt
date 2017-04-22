@@ -1,40 +1,23 @@
-========================================================================
-    CONSOLE APPLICATION : Prototype Project Overview
-========================================================================
+﻿Назначение
+Для создания новых объектов паттерн Prototype использует прототипы. 
+Прототип - это уже существующий в системе объект, который поддерживает операцию клонирования, 
+то есть умеет создавать копию самого себя. Таким образом, для создания объекта некоторого 
+класса достаточно выполнить операцию clone() соответствующего прототипа.
 
-AppWizard has created this Prototype application for you.
+Применимость
+Паттерн используется чтобы:
 
-This file contains a summary of what you will find in each of the files that
-make up your Prototype application.
+	 - избежать дополнительных усилий по созданию объекта стандартным путём (имеется в виду использование 
+	конструктора, так как в этом случае также будут вызваны конструкторы всей иерархии предков объекта), 
+	когда это непозволительно дорого для приложения.
+	 - избежать наследования создателя объекта (object creator) в клиентском приложении, как это делает паттерн 
+	abstract factory.
+	 - Используйте этот шаблон проектирования, когда системe безразлично как именно в ней создаются, 
+	компонуются и представляются продукты:
+		 - инстанцируемые классы определяются во время выполнения, например с помощью динамической загрузки;
+		 - избежать построения иерархий классов или фабрик, параллельных иерархии классов продуктов;
+		 - экземпляры класса могут находиться в одном из нескольких различных состояний. 
 
 
-Prototype.vcxproj
-    This is the main project file for VC++ projects generated using an Application Wizard.
-    It contains information about the version of Visual C++ that generated the file, and
-    information about the platforms, configurations, and project features selected with the
-    Application Wizard.
-
-Prototype.vcxproj.filters
-    This is the filters file for VC++ projects generated using an Application Wizard. 
-    It contains information about the association between the files in your project 
-    and the filters. This association is used in the IDE to show grouping of files with
-    similar extensions under a specific node (for e.g. ".cpp" files are associated with the
-    "Source Files" filter).
-
-Prototype.cpp
-    This is the main application source file.
-
-/////////////////////////////////////////////////////////////////////////////
-Other standard files:
-
-StdAfx.h, StdAfx.cpp
-    These files are used to build a precompiled header (PCH) file
-    named Prototype.pch and a precompiled types file named StdAfx.obj.
-
-/////////////////////////////////////////////////////////////////////////////
-Other notes:
-
-AppWizard uses "TODO:" comments to indicate parts of the source code you
-should add to or customize.
-
-/////////////////////////////////////////////////////////////////////////////
+Задача на самостоятельную работу
+Расширить существующий код новым классом “StudentRecord”, что содержит два текстовых поля: номер зачетки и имя студента.

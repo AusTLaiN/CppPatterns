@@ -1,40 +1,16 @@
-========================================================================
-    CONSOLE APPLICATION : Decorator Project Overview
-========================================================================
+﻿Декоратор (Decorator) 
+представляет структурный шаблон проектирования, который позволяет динамически подключать к 
+объекту дополнительную функциональность.
 
-AppWizard has created this Decorator application for you.
+Для определения нового функционала в классах нередко используется наследование. 
+Декораторы же предоставляет наследованию более гибкую альтернативу, поскольку позволяют динамически 
+в процессе выполнения определять новые возможности у объектов.
 
-This file contains a summary of what you will find in each of the files that
-make up your Decorator application.
+Когда следует использовать декораторы?
+	 - Когда надо динамически добавлять к объекту новые функциональные возможности. 
+	При этом данные возможности могут быть сняты с объекта
+	 - Когда применение наследования неприемлемо. Например, если нам надо определить множество 
+	различных функциональностей и для каждой функциональности наследовать отдельный класс, то структура классов может очень сильно разрастись. Еще больше она может разрастись, если нам необходимо создать классы, реализующие все возможные сочетания добавляемых функциональностей.
 
-
-Decorator.vcxproj
-    This is the main project file for VC++ projects generated using an Application Wizard.
-    It contains information about the version of Visual C++ that generated the file, and
-    information about the platforms, configurations, and project features selected with the
-    Application Wizard.
-
-Decorator.vcxproj.filters
-    This is the filters file for VC++ projects generated using an Application Wizard. 
-    It contains information about the association between the files in your project 
-    and the filters. This association is used in the IDE to show grouping of files with
-    similar extensions under a specific node (for e.g. ".cpp" files are associated with the
-    "Source Files" filter).
-
-Decorator.cpp
-    This is the main application source file.
-
-/////////////////////////////////////////////////////////////////////////////
-Other standard files:
-
-StdAfx.h, StdAfx.cpp
-    These files are used to build a precompiled header (PCH) file
-    named Decorator.pch and a precompiled types file named StdAfx.obj.
-
-/////////////////////////////////////////////////////////////////////////////
-Other notes:
-
-AppWizard uses "TODO:" comments to indicate parts of the source code you
-should add to or customize.
-
-/////////////////////////////////////////////////////////////////////////////
+Задача на самостоятельную работу
+Расширить существующий код, добавив возможность добавлять спойлер к автомобилю.

@@ -1,40 +1,22 @@
-========================================================================
-    CONSOLE APPLICATION : Observer Project Overview
-========================================================================
+﻿Паттерн "Наблюдатель" (Observer) 
+представляет поведенческий шаблон проектирования, который использует отношение "один ко многим". 
+В этом отношении есть один наблюдаемый объект и множество наблюдателей. И при изменении наблюдаемого 
+объекта автоматически происходит оповещение всех наблюдателей.
 
-AppWizard has created this Observer application for you.
+Данный паттерн еще называют Publisher-Subscriber (издатель-подписчик), 
+поскольку отношения издателя и подписчиков характеризуют действие данного паттерна: 
+подписчики подписываются email-рассылку определенного сайта. 
+Сайт-издатель с помощью email-рассылки уведомляет всех подписчиков о изменениях. 
+А подписчики получают изменения и производят определенные действия: могут зайти на сайт, 
+могут проигнорировать уведомления и т.д.
 
-This file contains a summary of what you will find in each of the files that
-make up your Observer application.
+Когда использовать паттерн Наблюдатель?
 
+	 - Когда система состоит из множества классов, объекты которых должны находиться в согласованных состояниях
+	 - Когда общая схема взаимодействия объектов предполагает две стороны: одна рассылает сообщения и является 
+	 главным, другая получает сообщения и реагирует на них. Отделение логики обеих сторон позволяет их рассматривать независимо и использовать отдельно друга от друга.
+	 - Когда существует один объект, рассылающий сообщения, и множество подписчиков, которые получают сообщения. 
+	 При этом точное число подписчиков заранее неизвестно и процессе работы программы может изменяться.
 
-Observer.vcxproj
-    This is the main project file for VC++ projects generated using an Application Wizard.
-    It contains information about the version of Visual C++ that generated the file, and
-    information about the platforms, configurations, and project features selected with the
-    Application Wizard.
-
-Observer.vcxproj.filters
-    This is the filters file for VC++ projects generated using an Application Wizard. 
-    It contains information about the association between the files in your project 
-    and the filters. This association is used in the IDE to show grouping of files with
-    similar extensions under a specific node (for e.g. ".cpp" files are associated with the
-    "Source Files" filter).
-
-Observer.cpp
-    This is the main application source file.
-
-/////////////////////////////////////////////////////////////////////////////
-Other standard files:
-
-StdAfx.h, StdAfx.cpp
-    These files are used to build a precompiled header (PCH) file
-    named Observer.pch and a precompiled types file named StdAfx.obj.
-
-/////////////////////////////////////////////////////////////////////////////
-Other notes:
-
-AppWizard uses "TODO:" comments to indicate parts of the source code you
-should add to or customize.
-
-/////////////////////////////////////////////////////////////////////////////
+Задача на самостоятельную работу
+Подписчики подписываются на email-рассылку определенного сайта.

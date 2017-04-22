@@ -1,40 +1,23 @@
-========================================================================
-    CONSOLE APPLICATION : Singleton Project Overview
-========================================================================
-
-AppWizard has created this Singleton application for you.
-
-This file contains a summary of what you will find in each of the files that
-make up your Singleton application.
+﻿Одиночка (англ. Singleton) — порождающий шаблон проектирования, гарантирующий, 
+что в однопроцессном приложении будет единственный экземпляр некоторого класса, 
+и предоставляющий глобальную точку доступа к этому экземпляру.
 
 
-Singleton.vcxproj
-    This is the main project file for VC++ projects generated using an Application Wizard.
-    It contains information about the version of Visual C++ that generated the file, and
-    information about the platforms, configurations, and project features selected with the
-    Application Wizard.
+Цель
+У класса есть только один экземпляр, и он предоставляет к нему глобальную точку доступа.
+Существенно то, что можно пользоваться именно экземпляром класса, 
+так как при этом во многих случаях становится доступной более широкая функциональность. Например, к описанным компонентам класса можно обращаться через интерфейс, если такая возможность поддерживается языком.
 
-Singleton.vcxproj.filters
-    This is the filters file for VC++ projects generated using an Application Wizard. 
-    It contains information about the association between the files in your project 
-    and the filters. This association is used in the IDE to show grouping of files with
-    similar extensions under a specific node (for e.g. ".cpp" files are associated with the
-    "Source Files" filter).
+Глобальный «одинокий» объект — именно объект, 
+а не набор процедур, не привязанных ни к какому объекту — бывает нужен:
 
-Singleton.cpp
-    This is the main application source file.
+ - если используется существующая объектно-ориентированная библиотека;
+ - если есть шансы, что один объект когда-нибудь превратится в несколько;
+ - если интерфейс объекта (например, игрового мира) слишком сложен и не стоит 
+ засорять основное пространство имён большим количеством функций;
+ - если, в зависимости от каких-нибудь условий и настроек, создаётся один из нескольких объектов. 
 
-/////////////////////////////////////////////////////////////////////////////
-Other standard files:
 
-StdAfx.h, StdAfx.cpp
-    These files are used to build a precompiled header (PCH) file
-    named Singleton.pch and a precompiled types file named StdAfx.obj.
-
-/////////////////////////////////////////////////////////////////////////////
-Other notes:
-
-AppWizard uses "TODO:" comments to indicate parts of the source code you
-should add to or customize.
-
-/////////////////////////////////////////////////////////////////////////////
+Задача на самостоятельную работу
+Реализовать класс “StockExchange” который имеет публичное поле int count, 
+к которому обращаются разные потоки, что увеличивают это поле на 1.

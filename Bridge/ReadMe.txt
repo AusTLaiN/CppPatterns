@@ -1,40 +1,18 @@
-========================================================================
-    CONSOLE APPLICATION : Bridge Project Overview
-========================================================================
+﻿Мост (Bridge) - структурный шаблон проектирования, который позволяет отделить абстракцию от 
+реализации таким образом, чтобы и абстракцию, и реализацию можно было изменять независимо друг от друга.
 
-AppWizard has created this Bridge application for you.
+Даже если мы отделим абстракцию от конкретных реализаций, то у нас все равно все наследуемые классы 
+будут жестко привязаны к интерфейсу, определяемому в базовом абстрактном классе. Для преодоления 
+жестких связей и служит паттерн Мост.
+Общая реализация паттерна состоит в объявлении классов абстракций и классов реализаций в отдельных 
+параллельных иерархиях классов.
 
-This file contains a summary of what you will find in each of the files that
-make up your Bridge application.
 
+Когда использовать данный паттерн?
 
-Bridge.vcxproj
-    This is the main project file for VC++ projects generated using an Application Wizard.
-    It contains information about the version of Visual C++ that generated the file, and
-    information about the platforms, configurations, and project features selected with the
-    Application Wizard.
+	 - Когда надо избежать постоянной привязки абстракции к реализации
+	 - Когда наряду с реализацией надо изменять и абстракцию независимо друг от друга. 
+	 То есть изменения в абстракции не должно привести к изменениям в реализации
 
-Bridge.vcxproj.filters
-    This is the filters file for VC++ projects generated using an Application Wizard. 
-    It contains information about the association between the files in your project 
-    and the filters. This association is used in the IDE to show grouping of files with
-    similar extensions under a specific node (for e.g. ".cpp" files are associated with the
-    "Source Files" filter).
-
-Bridge.cpp
-    This is the main application source file.
-
-/////////////////////////////////////////////////////////////////////////////
-Other standard files:
-
-StdAfx.h, StdAfx.cpp
-    These files are used to build a precompiled header (PCH) file
-    named Bridge.pch and a precompiled types file named StdAfx.obj.
-
-/////////////////////////////////////////////////////////////////////////////
-Other notes:
-
-AppWizard uses "TODO:" comments to indicate parts of the source code you
-should add to or customize.
-
-/////////////////////////////////////////////////////////////////////////////
+Задача на самостоятельную работу
+Расширить существующий код, добавив рисовать прямоугольники разными способами.
