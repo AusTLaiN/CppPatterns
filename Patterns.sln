@@ -18,6 +18,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{70AF8360-8A86-4361-81DE-C76CB106A8E1}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facade", "Facade\Facade.vcxproj", "{29304673-A8C6-49EC-8D5A-03BCA24E8E7E}"
