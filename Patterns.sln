@@ -13,6 +13,13 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Adapter", "Adapter\Adapter.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Decorator", "Decorator\Decorator.vcxproj", "{CC00A848-A86E-4CCE-9B76-F8CC41F3F2CF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Strategy", "Strategy\Strategy.vcxproj", "{92655CA9-C1A1-49CE-95F2-3325598264B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{70AF8360-8A86-4361-81DE-C76CB106A8E1}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -43,6 +50,10 @@ Global
 		{CC00A848-A86E-4CCE-9B76-F8CC41F3F2CF}.Debug|Win32.Build.0 = Debug|Win32
 		{CC00A848-A86E-4CCE-9B76-F8CC41F3F2CF}.Release|Win32.ActiveCfg = Release|Win32
 		{CC00A848-A86E-4CCE-9B76-F8CC41F3F2CF}.Release|Win32.Build.0 = Release|Win32
+		{92655CA9-C1A1-49CE-95F2-3325598264B8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{92655CA9-C1A1-49CE-95F2-3325598264B8}.Debug|Win32.Build.0 = Debug|Win32
+		{92655CA9-C1A1-49CE-95F2-3325598264B8}.Release|Win32.ActiveCfg = Release|Win32
+		{92655CA9-C1A1-49CE-95F2-3325598264B8}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
