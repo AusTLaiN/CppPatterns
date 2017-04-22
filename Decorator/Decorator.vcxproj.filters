@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Tuning">
+      <UniqueIdentifier>{d9c96527-d688-4631-a6c8-11a96f22946a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Car">
+      <UniqueIdentifier>{291a3e33-e5ee-4806-a476-1794d423854c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -27,20 +33,20 @@
     <ClInclude Include="OptionsDecorator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CarModel1.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="ManualTransmission.h">
+      <Filter>Header Files\Tuning</Filter>
     </ClInclude>
     <ClInclude Include="Navigation.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Tuning</Filter>
     </ClInclude>
     <ClInclude Include="PremiumSoundSystem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ManualTransmission.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Tuning</Filter>
     </ClInclude>
     <ClInclude Include="CommonCar.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Car</Filter>
+    </ClInclude>
+    <ClInclude Include="CarModel1.h">
+      <Filter>Header Files\Car</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

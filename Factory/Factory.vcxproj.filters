@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Computers">
+      <UniqueIdentifier>{aa0bc187-897d-4b1b-9c1e-1816969675ce}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -24,17 +27,17 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Computer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Laptop.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Desktop.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="ComputerFactory.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Computer.h">
+      <Filter>Header Files\Computers</Filter>
+    </ClInclude>
+    <ClInclude Include="Desktop.h">
+      <Filter>Header Files\Computers</Filter>
+    </ClInclude>
+    <ClInclude Include="Laptop.h">
+      <Filter>Header Files\Computers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

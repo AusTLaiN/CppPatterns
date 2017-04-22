@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Clients">
+      <UniqueIdentifier>{5bd2d93a-4940-4e2a-8b09-355b4d58f894}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Servers">
+      <UniqueIdentifier>{e431f871-f070-44a5-bbc8-903140129da7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -24,20 +30,20 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ClientInterface.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="WeatherServerInterface.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="WeatherServer.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="ClientStatistic.h">
+      <Filter>Header Files\Clients</Filter>
     </ClInclude>
     <ClInclude Include="ClientCurrentCondition.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Clients</Filter>
     </ClInclude>
-    <ClInclude Include="ClientStatistic.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="ClientInterface.h">
+      <Filter>Header Files\Clients</Filter>
+    </ClInclude>
+    <ClInclude Include="WeatherServer.h">
+      <Filter>Header Files\Servers</Filter>
+    </ClInclude>
+    <ClInclude Include="WeatherServerInterface.h">
+      <Filter>Header Files\Servers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

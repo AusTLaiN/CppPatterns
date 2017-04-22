@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Builders">
+      <UniqueIdentifier>{2993e72a-793c-4114-82c7-d69fc5f32baa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -27,17 +30,17 @@
     <ClInclude Include="Pizza.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PizzaBuilder.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="HawaiianPizzaBuilder.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SpicyPizzaBuilder.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Cook.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PizzaBuilder.h">
+      <Filter>Header Files\Builders</Filter>
+    </ClInclude>
+    <ClInclude Include="HawaiianPizzaBuilder.h">
+      <Filter>Header Files\Builders</Filter>
+    </ClInclude>
+    <ClInclude Include="SpicyPizzaBuilder.h">
+      <Filter>Header Files\Builders</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
