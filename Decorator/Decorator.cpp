@@ -5,6 +5,7 @@
 
 #include <string>
 #include "CarModel1.h"
+#include "CommonCar.h"
 #include "Navigation.h"
 #include "PremiumSoundSystem.h"
 #include "ManualTransmission.h"
@@ -14,7 +15,7 @@ using namespace std;
 int _tmain(int argc, _TCHAR* argv[])
 {
 	  //Create our Car that we want to buy
-        Car *b = new CarModel1();
+	CommonCar *b = new CarModel1();
 
         cout << "Base model of " << b->getDescription() << " costs $" << b->getCost() << "\n";  
             
