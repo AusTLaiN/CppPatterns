@@ -20,6 +20,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitignore = .gitignore
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facade", "Facade\Facade.vcxproj", "{29304673-A8C6-49EC-8D5A-03BCA24E8E7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -54,6 +56,10 @@ Global
 		{92655CA9-C1A1-49CE-95F2-3325598264B8}.Debug|Win32.Build.0 = Debug|Win32
 		{92655CA9-C1A1-49CE-95F2-3325598264B8}.Release|Win32.ActiveCfg = Release|Win32
 		{92655CA9-C1A1-49CE-95F2-3325598264B8}.Release|Win32.Build.0 = Release|Win32
+		{29304673-A8C6-49EC-8D5A-03BCA24E8E7E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{29304673-A8C6-49EC-8D5A-03BCA24E8E7E}.Debug|Win32.Build.0 = Debug|Win32
+		{29304673-A8C6-49EC-8D5A-03BCA24E8E7E}.Release|Win32.ActiveCfg = Release|Win32
+		{29304673-A8C6-49EC-8D5A-03BCA24E8E7E}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
