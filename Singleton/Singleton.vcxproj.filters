@@ -24,13 +24,13 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Lock.h">
+    <ClInclude Include="DoomGame.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Mutex.h">
+    <ClInclude Include="SingletonSoundSystem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SingletonClass.h">
+    <ClInclude Include="YouTube.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -39,9 +39,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Singleton.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SingletonClass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
